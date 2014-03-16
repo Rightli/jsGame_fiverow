@@ -1,0 +1,10 @@
+<game
+    id="20131217"
+    name="五子棋"
+    icon="five.png"
+    index="html/fiverow_demo.html"
+    maxplayers="2"
+    minplayers="2"
+    minsdk="1" >
+
+</game>

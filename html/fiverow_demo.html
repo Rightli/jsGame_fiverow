@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, height=device-height,target-densitydpi=device-dpi,user-scalable=no, initial-scale=1.0, maximum-scale=1.0;">
+	
+	    <title>Five in a row</title>
+	    <meta name="description" content="" />
+	
+	    <link rel="shortcut icon" href="" />
+	    <link rel="apple-touch-icon" href="" />
+	    <!-- <link rel="stylesheet" href="../css/styles.css" type="text/css" charset="utf-8"> -->
+	    <script type="text/javascript" src="../js/mind.js"></script>
+	    <script type="text/javascript" src="../js/plugin/dom.js"></script>
+	    <script type="text/javascript" src="../js/ext/table.js"></script>
+	    <script type="text/javascript" src="../js/ext/button.js"></script>
+	    <!-- <script type="text/javascript" src="../js/plugin/lc.js"></script> -->
+	    <script type="text/javascript" src="../js/plugin/lc.js"></script>
+	    <script type="text/javascript" src="../js/draw.js"></script>
+		<script type="text/javascript" src="../js/layout.js"></script>
+	    <script type="text/javascript" src="../js/plugin/watch.js"></script>
+  		<script type="text/javascript" src="../js/plugin/sync.js"></script>
+  		
+  		<script type="text/javascript" src="../js/config.js"></script>
+	    <script type="text/javascript" src="../js/fiverow.js"></script>
+	    <script type="text/javascript" src="../js/util.js"></script>
+  		<script type="text/javascript" src="../js/app.js"></script>
+  		<script type="text/javascript" src="../js/judge.js"></script>
+	    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+        .textshadow{
+            text-shadow: 5px 5px 5px #FF0000;
+        }
+        .startscreen{
+        	position:absolute;
+        	margin-top:30%;
+        	margin-left:30%;
+        	display: none;
+        }
+        .mainscreen{
+        	position:absolute;
+        	display: none;
+        }
+        .menuc{
+        	position:absolute;
+        	width:100%;
+        	z-index: -100;
+        }
+        .contentdiv{
+        	position: relative;
+        	height: 70%;
+        }
+        .resultc{
+        	position:absolute;
+        	display : none;
+        }
+        .again{
+        	position:absolute;
+        	width:100%;
+        	height :100%;
+        	display : none;
+        	background-color :#FFFFFF;
+        }
+        #successInfo{
+        	position:relative;
+        	top: 20%;
+        	text-indent: 100px;
+        	height : 30% ;
+        }
+        #againOper{
+        	position:relative;
+        	/*left: 30%;*/
+        	left:50px;
+        	height : 60% ;
+        }
+        .identity{
+        	position:relative;
+        	margin-left: 5%;
+        	magin-top : 15%;
+        }
+        .oper{
+        	position:relative;
+        	margin-left: 300px;
+        	magin-top : 10%;
+        }
+        
+    </style>
+	</head>
+	<body>
+		<div id="gamestartscreen" class='startscreen'>
+			<img src="../img/settings/play.png" id="start"><br><br>
+	        <img src="../img/settings/return.png" id="quit">
+	    </div>
+		<div id="mainScreen" class='mainscreen'>
+				<div id="menu" class="menuc" >
+					<img src="../img/checkerpng/checkerboard.png" id="backImg"  >
+				</div>
+	        	<!-- <div id="playScreen" class="contentdiv">
+	        		<canvas id="table" height="800" width="600" >
+    				</canvas>
+	        	</div> -->
+	        	<div id="playScreen" class="menuc">
+		        	<canvas id="table" height="800" width="600" >
+	    			</canvas>
+		        </div>
+		        <div id="" class="contentdiv">
+	    			<canvas id="piecestable" height="800" width="600" >
+	    			</canvas>
+		        </div>
+	        
+	        	<div id="info">
+	        		<label id="infoText" class="textshadow"> </label>
+	        	</div>  
+	    </div>
+	    
+	    <div id="again" class="again" >
+	    	<div id="successInfo"> </div>
+	    	<div id="againOper">
+	    		<img src="../img/settings/play.png" id="playAgain"><br><br>
+	        	<img src="../img/settings/return.png" id="close">
+	    	</div>
+	    	
+	    </div>      
+	    <!-- <canvas id="table" height="800" width="600" style="border:solid 1px black;" >
+    	</canvas> -->
+	</body>
+</html>
